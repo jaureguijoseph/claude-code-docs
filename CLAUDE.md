@@ -11,12 +11,9 @@ When responding to /docs commands:
 2. Read documentation files from the docs/ directory only
 3. Use the manifest to know available topics
 
-## Files to ultrathink about
-
-@install.sh
-@README.md
-@uninstall.sh
-@UNINSTALL.md
-@claude-docs-helper.md
-@scripts/
-@.github/workflows/
+## Key files (read on demand, don't preload)
+- `install.sh` — installer/migrator, v0.3.3
+- `uninstall.sh` — smart uninstaller
+- `scripts/claude-docs-helper.sh.template` — the /docs helper
+- `scripts/fetch_claude_docs.py` — doc scraper
+- `.github/workflows/update-docs.yml` — 3-hour sync job
